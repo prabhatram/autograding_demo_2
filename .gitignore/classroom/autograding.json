@@ -1,0 +1,30 @@
+{
+    "tests": [
+      {
+        "name": "Test Invalid Username",
+        "run": "pytest -q --tb=short tests/test_password_validation.py::test_invalid_username",
+        "points": 2
+      },
+      {
+        "name": "Test Valid Username, Invalid Password (No Special Character)",
+        "run": "pytest -q --tb=short tests/test_password_validation.py::test_valid_username_invalid_password_no_special_char",
+        "points": 2
+      },
+      {
+        "name": "Test Valid Username, Invalid Password (No Uppercase Letter)",
+        "run": "pytest -q --tb=short tests/test_password_validation.py::test_valid_username_invalid_password_no_uppercase",
+        "points": 2
+      },
+      {
+        "name": "Test Valid Username, Invalid Password (No Digit)",
+        "run": "pytest -q --tb=short tests/test_password_validation.py::test_valid_username_invalid_password_no_digit",
+        "points": 2
+      },
+      {
+        "name": "Test Valid Username, Valid Password",
+        "run": "pytest -q --tb=short tests/test_password_validation.py::test_valid_username_valid_password",
+        "points": 2
+      }
+    ]
+  }
+  
